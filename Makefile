@@ -16,4 +16,8 @@ dc_down:
 .PHONY: web_bash
 web_bash:
 	@docker compose exec web bash
+
+.PHONY: db_console
+db_console:
+	@docker compose exec db psql -U postgres
 	
